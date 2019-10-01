@@ -1,0 +1,9 @@
+{
+
+  "skillNames": [ "C#", "C++", "PHP", "JAVA", "RUBY", "PYTHON", "SQL", "C" ],
+  "abilitySkillNames": ["DETERMINATION","MORALE","PATIENCE","CONCENTRATION","LEADERSHIP","TEAMWORK"],
+  "devNames": [ "BOB", "ROGER", "MICHEL", "HUGO", "MARCEL", "WILLIAM", "DANIEL", "ALEXANDRE", "JAMES", "NOAH", "VICTOR", "OLIVIER", "GEORGE", "BEN", "LOUIS", "JONAS", "LUCAS", "OSCAR", "EMMA", "LEA", "SOFIA", "ANNA", "DANIEL", "JUAN", "STANLEY", "JAMES", "RICHARD", "NATHAN", "KIM", "CHARLELIE", "GEOFFREY" ],
+  "schoolNames": [ "STANFORD", "HARVARD", "GRANSVIEW", "WATERFORD", "MOUNTAINOAK", "DIIAGE" ]
+
+
+}

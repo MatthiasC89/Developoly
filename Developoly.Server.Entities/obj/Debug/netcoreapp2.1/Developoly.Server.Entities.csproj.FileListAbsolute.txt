@@ -1,0 +1,11 @@
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\bin\Debug\netcoreapp2.1\Developoly.Server.Entities.deps.json
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\bin\Debug\netcoreapp2.1\Developoly.Server.Entities.dll
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\bin\Debug\netcoreapp2.1\Developoly.Server.Entities.pdb
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\obj\Debug\netcoreapp2.1\Developoly.Server.Entities.resourceFile1.resources
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\obj\Debug\netcoreapp2.1\Developoly.Server.Entities.csproj.GenerateResource.cache
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\obj\Debug\netcoreapp2.1\Developoly.Server.Entities.csproj.CoreCompileInputs.cache
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\obj\Debug\netcoreapp2.1\Developoly.Server.Entities.AssemblyInfoInputs.cache
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\obj\Debug\netcoreapp2.1\Developoly.Server.Entities.AssemblyInfo.cs
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\obj\Debug\netcoreapp2.1\Developoly.Server.Entities.dll
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\obj\Debug\netcoreapp2.1\Developoly.Server.Entities.pdb
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Entities\obj\Debug\netcoreapp2.1\Developoly.Server.Entities.csprojAssemblyReference.cache

@@ -1,0 +1,12 @@
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\bin\Debug\netcoreapp2.1\Developoly.Server.Services.deps.json
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\bin\Debug\netcoreapp2.1\Developoly.Server.Services.dll
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\bin\Debug\netcoreapp2.1\Developoly.Server.Services.pdb
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\bin\Debug\netcoreapp2.1\Developoly.Server.Entities.dll
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\bin\Debug\netcoreapp2.1\Developoly.Server.Entities.pdb
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\obj\Debug\netcoreapp2.1\Developoly.Server.Services.csprojAssemblyReference.cache
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\obj\Debug\netcoreapp2.1\Developoly.Server.Services.csproj.CoreCompileInputs.cache
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\obj\Debug\netcoreapp2.1\Developoly.Server.Services.AssemblyInfoInputs.cache
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\obj\Debug\netcoreapp2.1\Developoly.Server.Services.AssemblyInfo.cs
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\obj\Debug\netcoreapp2.1\Developoly.Server.Services.csproj.CopyComplete
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\obj\Debug\netcoreapp2.1\Developoly.Server.Services.dll
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Services\obj\Debug\netcoreapp2.1\Developoly.Server.Services.pdb

@@ -1,0 +1,16 @@
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\bin\Debug\netcoreapp2.1\Developoly.Server.Core.deps.json
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\bin\Debug\netcoreapp2.1\Developoly.Server.Core.runtimeconfig.json
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\bin\Debug\netcoreapp2.1\Developoly.Server.Core.runtimeconfig.dev.json
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\bin\Debug\netcoreapp2.1\Developoly.Server.Core.dll
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\bin\Debug\netcoreapp2.1\Developoly.Server.Core.pdb
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\bin\Debug\netcoreapp2.1\Developoly.Server.Entities.dll
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\bin\Debug\netcoreapp2.1\Developoly.Server.Services.dll
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\bin\Debug\netcoreapp2.1\Developoly.Server.Entities.pdb
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\bin\Debug\netcoreapp2.1\Developoly.Server.Services.pdb
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\obj\Debug\netcoreapp2.1\Developoly.Server.Core.csprojAssemblyReference.cache
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\obj\Debug\netcoreapp2.1\Developoly.Server.Core.csproj.CoreCompileInputs.cache
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\obj\Debug\netcoreapp2.1\Developoly.Server.Core.AssemblyInfoInputs.cache
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\obj\Debug\netcoreapp2.1\Developoly.Server.Core.AssemblyInfo.cs
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\obj\Debug\netcoreapp2.1\Developoly.Server.Core.csproj.CopyComplete
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\obj\Debug\netcoreapp2.1\Developoly.Server.Core.dll
+C:\Users\charlélie\DIIAGE\projet1\Developoly.Server.Core\obj\Debug\netcoreapp2.1\Developoly.Server.Core.pdb
