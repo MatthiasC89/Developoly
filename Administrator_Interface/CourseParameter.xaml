@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="Administrator_Interface.CourseParameter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Administrator_Interface"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Price course" FontSize="20" HorizontalAlignment="Center" Margin="10 0 0 0" />
+            <Slider x:Name="SliderPriceCourse" Grid.Column="1" Width="200" Minimum="10" Maximum="1000" Margin="10 0 0 0" ValueChanged="SliderPriceCourse_ValueChanged" StepFrequency="10" Value="200"/>
+            <TextBlock Text="Multiplier of Course" Grid.Row="2" FontSize="20" HorizontalAlignment="Center" Margin="10 0 0 0"/>
+            <Slider x:Name="SliderMultiplierCourse" Grid.Row="2" Grid.Column="1" Width="200" Minimum="1" Maximum="4" Margin="10 0 0 0" Value="2" StepFrequency="1" ValueChanged="SliderMultiplierCourse_ValueChanged" />
+            <TextBlock Text="Min Course" Grid.Row="4" FontSize="20" HorizontalAlignment="Center" Margin="10 0 0 0"/>
+            <Slider x:Name="SliderMinCourse" Grid.Row="4" Grid.Column="1" Width="200" Minimum="1" Maximum="4" Margin="10 0 0 0" Value="2" StepFrequency="1" ValueChanged="SliderMinCourse_ValueChanged" />
+            <TextBlock Text="Max Course" Grid.Row="6" FontSize="20" HorizontalAlignment="Center" Margin="10 0 0 0"/>
+            <Slider x:Name="SliderMaxCourse" Grid.Row="6" Grid.Column="1" Width="200" Minimum="1" Maximum="4" Margin="10 0 0 0" Value="2" StepFrequency="1" ValueChanged="SliderMaxCourse_ValueChanged" />
+            <TextBlock x:Name="Pricecourse" Grid.Column="2" FontSize="12" Text="{Binding Value, ElementName=SliderPriceCourse}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 0 0"/>
+            <TextBlock x:Name="NumCourse" Grid.Row="2" Grid.Column="2" FontSize="12" Text="{Binding Value, ElementName=SliderMultiplierCourse}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 0 0"/>
+            <TextBlock x:Name="MiniCourse" Grid.Row="4" Grid.Column="2" FontSize="12" Text="{Binding Value, ElementName=SliderMinCourse}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 0 0"/>
+            <TextBlock x:Name="MaxiCourse" Grid.Row="6" Grid.Column="2" FontSize="12" Text="{Binding Value, ElementName=SliderMaxCourse}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 0 0"/>
+        </Grid>
+
+    </Grid>
+</Page>

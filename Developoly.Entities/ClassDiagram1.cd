@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Developoly.Entities.Dev">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAHAAAABgAAAAAAAAAAQAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Dev.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Developoly.Entities.Skill">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAACAAAAAAAQAAAEEAAABAAAAAAAAAgA=</HashCode>
+      <FileName>Skill.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Dev" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Developoly.Entities.Compagny">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAIAAAAAAAACAAACAAAQAgAAEAAAAAAAAAAAAEgA=</HashCode>
+      <FileName>Compagny.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Projet" />
+      <Property Name="Dev" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Developoly.Entities.Projet">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACABAEAAAABAIAAAACAAAAAgAAAAIAAAAAAAAAAgA=</HashCode>
+      <FileName>Projet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Skill" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

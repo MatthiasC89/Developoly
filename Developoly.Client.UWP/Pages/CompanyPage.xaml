@@ -1,0 +1,143 @@
+﻿<Page
+    x:Class="Developoly.Client.UWP.Pages.CompanyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Developoly.Client.UWP.Pages"
+    xmlns:converter="using:Developoly.Client.UWP.Assets.Converter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <converter:URLChoose x:Key="UrlConverter" />
+        <converter:DurationChoose x:Key="DurationConverter" />
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="txtNameCompany" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="45" Margin="25 0 0 0"  Foreground="{StaticResource PayneGrey}" FontWeight="Bold" Text="GentleManEcho" TextWrapping="Wrap"/>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="25 0 0 0">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="35" Foreground="{StaticResource PayneGrey}" FontWeight="Normal" Text="Money of company:" TextWrapping="Wrap"/>
+                    <TextBlock x:Name="txtMoneyCompany" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="35" Margin="8 0 0 0"  Foreground="{StaticResource PayneGrey}" FontWeight="Bold" Text="200" TextWrapping="Wrap"/>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="35" Margin="2 0 0 0"  Foreground="{StaticResource PayneGrey}" FontWeight="Bold" Text="€" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="2" Margin="0 0 0 15">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition  Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid x:Name="gridEmptyMyPro" Grid.Row="2" Canvas.ZIndex="4" Visibility="Collapsed">
+                        <TextBlock FontSize="45" Foreground="{StaticResource Citrine}" FontWeight="Light" Text="EMPTY" TextWrapping="Wrap" Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Grid>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="45" Foreground="{StaticResource PayneGrey}" FontWeight="Bold" Text="My project(s):" TextWrapping="Wrap" Margin="10 0 0 0"/>
+                    <ListView x:Name="listMyProjects" Grid.Row="2" Background="{StaticResource ListViewColorFirst}" BorderBrush="LightGray" BorderThickness="1" IsItemClickEnabled="False" ItemContainerStyle="{StaticResource ListViewItemContainerStyleSelected}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Height="130" BorderThickness="0 0 0 1" BorderBrush="LightGray">
+                                    <StackPanel Orientation="Horizontal" Margin="10">
+                                        <Image Source="../Assets/Pictures/Project/project.png" Margin="5"/>
+                                        <StackPanel Margin="10 0 0 0" VerticalAlignment="Stretch">
+                                            <TextBlock  FontSize="33" Foreground="{StaticResource PayneGrey}" FontWeight="Bold" TextWrapping="Wrap" PointerEntered="Link_PointerOver" PointerExited="Link_PointerExited" PointerPressed="LinkProject_PointerPressed" Tag="{Binding}">
+                                            <Run Text="Project n°" />
+                                            <Run Text="{Binding Id, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                            </TextBlock>
+                                            <StackPanel Orientation="Horizontal" >
+                                                <TextBlock FontSize="23" Foreground="{StaticResource PayneGrey}" FontWeight="Light" Text="Remaining:" TextWrapping="Wrap" Padding="0"/>
+                                                <TextBlock FontSize="23" Foreground="{StaticResource PayneGrey}" FontWeight="Light" Text="{Binding Reward, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Margin="7 0 0 0" Padding="0"/>
+                                                <TextBlock FontSize="23" Foreground="{StaticResource PayneGrey}" FontWeight="Light" Text="€" TextWrapping="Wrap" Margin="2 0 0 0" Padding="0"/>
+                                            </StackPanel>
+                                        </StackPanel>
+
+                                        <Grid Margin="20 0 0 0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition Height="50"/>
+                                            </Grid.RowDefinitions>
+                                            <Image Source="../Assets/Pictures/Developper/developper.png" Grid.RowSpan="2"/>
+                                            <Grid Grid.Row="1">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition Width="50"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Border Grid.Column="1" Background="{StaticResource JellyBean}" CornerRadius="100" BorderThickness="3" BorderBrush="{StaticResource JellyBeanDark}">
+                                                    <TextBlock FontSize="35" Foreground="{StaticResource MenuTextColor}" FontWeight="Normal" Text="{Binding Devs.Count, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Padding="0 0 0 5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+                                            </Grid>
+                                        </Grid>
+                                        <Grid>
+                                            <Image Source="../Assets/Pictures/General/turn.png" Margin="10"/>
+                                            <TextBlock FontSize="37" Foreground="{StaticResource Citrine}" FontWeight="Bold" Text="{Binding Duration, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Padding="3 0 0 5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        </Grid>
+                                    </StackPanel>
+                                </Grid>
+                                
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        
+                       
+                    </ListView>
+                </Grid>
+            </Grid>
+            <Grid Margin="0 0 0 15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition  Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="gridEmptyMyDev" Grid.Row="2" Canvas.ZIndex="4" Visibility="Collapsed">
+                    <TextBlock FontSize="45" Foreground="{StaticResource Citrine}" FontWeight="Light" Text="EMPTY" TextWrapping="Wrap" Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Grid>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="45" Foreground="{StaticResource PayneGrey}" FontWeight="Bold" Text="My developper(s):" TextWrapping="Wrap" Margin="10 0 0 0"/>
+                <ListView x:Name="listMyDeveloppers" Grid.Row="2" Background="{StaticResource ListViewColorFirst}" BorderBrush="LightGray" BorderThickness="1" IsItemClickEnabled="False" ItemContainerStyle="{StaticResource ListViewItemContainerStyleSelected}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Height="130" BorderThickness="0 0 0 1" BorderBrush="LightGray">
+                                <StackPanel Orientation="Horizontal" Margin="10">
+                                    <Image Source="../Assets/Pictures/Developper/developper.png"/>
+                                    <StackPanel Margin="10 0 0 0" VerticalAlignment="Stretch">
+                                        <TextBlock FontSize="33" Foreground="{StaticResource PayneGrey}" FontWeight="Bold" Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" PointerEntered="Link_PointerOver" PointerExited="Link_PointerExited" PointerPressed="LinkDevelopper_PointerPressed" Tag="{Binding}"/>
+                                        <StackPanel Orientation="Horizontal" >
+                                            <TextBlock FontSize="23" Foreground="{StaticResource PayneGrey}" FontWeight="Light" Text="Salary:" TextWrapping="Wrap" Padding="0"/>
+                                            <TextBlock FontSize="23" Foreground="{StaticResource PayneGrey}" FontWeight="Light" Text="{Binding Salary, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Margin="7 0 0 0" Padding="0"/>
+                                            <TextBlock FontSize="23" Foreground="{StaticResource PayneGrey}" FontWeight="Light" Text="€/month" TextWrapping="Wrap" Margin="2 0 0 0" Padding="0"/>
+                                            <TextBlock FontSize="23" Foreground="{StaticResource PayneGrey}" FontWeight="Light" Text="Hiring cost:" TextWrapping="Wrap" Margin="14 0 0 0" Padding="0"/>
+                                            <TextBlock FontSize="23" Foreground="{StaticResource PayneGrey}" FontWeight="Light" Text="{Binding HiringCost, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Margin="7 0 0 0" Padding="0"/>
+                                            <TextBlock FontSize="23" Foreground="{StaticResource PayneGrey}" FontWeight="Light" Text="€" TextWrapping="Wrap" Margin="2 0 0 0" Padding="0"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <Image Source="{Binding Converter={StaticResource UrlConverter}}" Margin="20"/>
+                                    <Grid>
+                                        <Image Source="..Assets/Pictures/General/turn.png" Margin="20"/>
+                                        <TextBlock FontSize="37" Foreground="{StaticResource Citrine}" FontWeight="Bold" Text="{Binding Converter={StaticResource UrlConverter}}" TextWrapping="Wrap" Padding="3 0 0 5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    </Grid>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>
